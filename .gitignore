@@ -25,3 +25,4 @@ strucord-*.tar
 # Ignore build/ folder
 /build
 
+.elixir_ls

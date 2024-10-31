@@ -3,7 +3,7 @@ defmodule Strucord.MixProject do
 
   def project do
     [
-      app: :strucord,
+      app: :nested_strucord,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
@@ -35,15 +35,15 @@ defmodule Strucord.MixProject do
     [
       extras: ["README.md"],
       main: "readme",
-      source_url: "https://github.com/quinnwilton/strucord"
+      source_url: "https://github.com/srikanthkyatham/strucord"
     ]
   end
 
   defp package do
     [
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/quinnwilton/strucord"},
-      maintainers: ["Quinn Wilton"]
+      links: %{"GitHub" => "https://github.com/srikanthkyatham/strucord"},
+      maintainers: ["Srikanth Kyatham"]
     ]
   end
 end

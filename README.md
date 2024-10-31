@@ -1,5 +1,7 @@
 # Strucord
 
+Note!: This is fork of https://github.com/QuinnWilton/strucord. It has been forked to add nested structs support.
+
 Allows for easy interop with Erlang records.
 
 By using it in a module, it autogenerates a struct for the given record, along with functions for converting between the struct and the record.
@@ -11,7 +13,7 @@ I primarily use this for calling Gleam code from Elixir.
 ```elixir
 def deps do
   [
-    {:strucord, "~> 0.1.0"}
+    {:nested_strucord, "~> 0.1.0"}
   ]
 end
 ```
@@ -27,6 +29,7 @@ Using the module will define three functions, `with_record/2`, `from_record/1`, 
 `to_record/1` takes a struct as argument, and returns a record.
 
 `overrides` it is an optional argument takes keyword list of options. For example: it could of array of nested structs or just a nested struct
+
 - tags: {:list, Tag}
 - tag: Tag
 
